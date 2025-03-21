@@ -7,3 +7,5 @@ services:
     ports:
       - "8001:8001"
     restart: no #always
+    #volumes:
+    #  - ./app:/app 
