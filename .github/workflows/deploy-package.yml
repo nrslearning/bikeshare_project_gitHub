@@ -28,6 +28,7 @@ jobs:
         pip install build 
     - name: build package 
       run: | 
+        cd bikeshare_project/
         python -m build
     - name: copy whl file
       run: |
