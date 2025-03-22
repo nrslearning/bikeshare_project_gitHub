@@ -48,5 +48,7 @@ jobs:
 
     - name: Push Docker image to Docker Hub
       run: |
+        ls -ltr
+        cd bikeshare_project/bike_sharing_api/
         docker push nrslearning/fastapi-app:${{ github.sha }}
 
