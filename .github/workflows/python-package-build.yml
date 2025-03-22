@@ -23,12 +23,12 @@ jobs:
         python-version: ${{ matrix.python-version }} 
     - name: Install build 
       run: | 
-        python -m pip install --upgrade pip &&\ 
+        python -m pip install --upgrade pip
         pip install build
 
     - name: build package 
       run: | 
-        cd bikeshare_project/ &&\
+        cd bikeshare_project/
         python -m build
 
     - name: Set up Docker Buildx
