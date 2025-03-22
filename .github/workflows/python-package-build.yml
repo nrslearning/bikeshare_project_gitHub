@@ -28,6 +28,7 @@ jobs:
 
     - name: build package 
       run: | 
+        cd bikeshare_project/ &&\
         python -m build
 
     - name: Set up Docker Buildx
