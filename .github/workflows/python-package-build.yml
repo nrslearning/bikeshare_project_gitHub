@@ -42,6 +42,7 @@ jobs:
 
     - name: Build Docker image
       run: |
+        cd bike_sharing_api/
         docker build -t nrslearning/fastapi-app:${{ github.sha }} .
 
     - name: Push Docker image to Docker Hub
