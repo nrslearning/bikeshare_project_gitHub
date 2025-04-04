@@ -53,3 +53,6 @@ jobs:
         # ls -ltr
         #cd bikeshare_project/bike_sharing_api/
         docker push nrslearning/fastapi-app:${{ github.sha }}
+
+    - name: Logout to Docker hub
+      run: docker logout
